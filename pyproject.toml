@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "household-helper"
+version = "0.1.0"
+description = ""
+authors = ["Ulrich Feindt <ufeindt@gmail.com>"]
+readme = "README.md"
+packages = [{include = "household_helper"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.1.5"
+selenium = "^4.7.2"
+pre-commit = "^2.21.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^23.1a1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
